@@ -11,6 +11,7 @@ module.exports = {
     require.resolve('babel-preset-react')
   ],
   plugins: [
+    ["antd", { "libraryName": "antd", "style": "css" }],
     // class { handleClick = () => { } }
     require.resolve('babel-plugin-transform-class-properties'),
     // { ...todo, completed: true }

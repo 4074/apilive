@@ -8,6 +8,7 @@ module.exports = {
     require.resolve('babel-preset-react')
   ],
   plugins: [
+    ["antd", { "libraryName": "antd", "style": "css" }],
     // class { handleClick = () => { } }
     require.resolve('babel-plugin-transform-class-properties'),
     // { ...todo, completed: true }
@@ -24,6 +25,6 @@ module.exports = {
       regenerator: true
     }],
     // Optimization: hoist JSX that never changes out of render()
-    require.resolve('babel-plugin-transform-react-constant-elements')
+    // require.resolve('babel-plugin-transform-react-constant-elements')
   ],
 };

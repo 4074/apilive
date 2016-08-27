@@ -1,24 +1,90 @@
-.App {
+
+#root, .App {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin-left: 260px;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px 32px 0;
+}
+
+.header {
+  height: 60px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.side-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.side-menu>ul {
+  min-height: 100%;
+}
+
+.content::-webkit-scrollbar, .side-menu::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+.content::-webkit-scrollbar {
+  width: 14px;
+}
+
+.content::-webkit-scrollbar-button, .side-menu::-webkit-scrollbar-button {
+  display: none;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  min-height: 32px;
+  background: #d2d2d2;
+  background-clip: padding-box;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  min-height: 2rem;
+  background: #d2d2d2;
+  background-clip: padding-box;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+
+.content::-webkit-scrollbar-track, .side-menu::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.align-center {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.button-block {
+  display: block;
+  width: 100%;
 }
